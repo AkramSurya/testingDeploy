@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm i && npm run build-storybook
-      - uses: rossjrw/pr-preview-action@v1
+      - uses: rossjrw/pr-preview-action@v1.1.1
         with:
           source-dir: ./storybook-static/
           preview-branch: gh-pages
